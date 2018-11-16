@@ -7,18 +7,6 @@ enum User {
     Visitor(String),
 }
 
-// impl ToString for Consumer {
-//     fn to_string(&self) -> String {
-//         format!("{}, {}", self.last_name, self.first_name)
-//     }
-// }
-
-// impl ToString for Visitor {
-//     fn to_string(&self) -> String {
-//         format!("{}", self.0)
-//     }
-// }
-
 impl ToString for User {
     fn to_string(&self) -> String {
         match self {
